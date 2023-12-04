@@ -6,11 +6,11 @@
 #    By: zsyyida <zsyyida@student.42abudhabi.ae>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/03 00:34:57 by zsyyida           #+#    #+#              #
-#    Updated: 2023/12/03 00:36:00 by zsyyida          ###   ########.fr        #
+#    Updated: 2023/12/03 20:36:16 by zsyyida          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = whatever
+NAME = easyfind
 
 CXX = c++
 
