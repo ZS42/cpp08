@@ -3,21 +3,24 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zsyyida <zsyyida@student.42abudhabi.ae>    +#+  +:+       +#+        */
+/*   By: zsyyida <zsyyida@student42abudhabi.ae>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/03 00:36:21 by zsyyida           #+#    #+#             */
-/*   Updated: 2023/12/08 01:39:45 by zsyyida          ###   ########.fr       */
+/*   Updated: 2023/12/08 13:45:28 by zsyyida          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "MutantStack.hpp"
+
 int main()
 {
+	std::cout << RED << "[FOR STACK]" << RESET << std::endl;
     MutantStack<int> mstack;
     mstack.push(5);
     mstack.push(17);
-    std::cout << mstack.top() << std::endl;
+    std::cout << GREEN <<  "[TOP] " << mstack.top() << std::endl;
     mstack.pop();
-    std::cout << mstack.size() << std::endl;
+    std::cout << "[SIZE] " << mstack.size() << std::endl;
     mstack.push(3);
     mstack.push(5);
     mstack.push(737);
@@ -27,11 +30,35 @@ int main()
     MutantStack<int>::iterator ite = mstack.end();
     ++it;
     --it;
+	std::cout << "[STACK IS ]" << std::endl;
     while (it != ite)
     {
     std::cout << *it << std::endl;
     ++it;
     }
     std::stack<int> s(mstack);
+	std::cout << RED << "[FOR LIST]" << RESET << std::endl;
+    std::list<int> list;
+    list.push_back(5);
+    list.push_back(17);
+    std::cout << BLUE << "[TOP] " << list.back() << std::endl;
+    list.pop_back();
+    std::cout << "[SIZE] " << list.size() << std::endl;
+    list.push_back(3);
+    list.push_back(5);
+    list.push_back(737);
+    //[...]
+    list.push_back(0);
+	std::list<int>::iterator list_it = list.begin();
+	std::list<int>::iterator list_ite = list.end();
+    ++list_it;
+    --list_it;
+	std::cout << "[LIST IS ]" << std::endl;
+    while (list_it != list_ite)
+    {
+    std::cout << *list_it << std::endl;
+    ++list_it;
+    }
+    // std::stack<int> s(mstack);
     return 0;
 }

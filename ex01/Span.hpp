@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Span.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zsyyida <zsyyida@student.42abudhabi.ae>    +#+  +:+       +#+        */
+/*   By: zsyyida <zsyyida@student42abudhabi.ae>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/03 00:36:15 by zsyyida           #+#    #+#             */
-/*   Updated: 2023/12/08 01:29:00 by zsyyida          ###   ########.fr       */
+/*   Updated: 2023/12/08 10:47:13 by zsyyida          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,18 +41,12 @@ class Span
         class FullException : public std::exception
         {
 	        public:
-	        	virtual const char * what () const throw () 
-                {
-	        		return ("Container is full. Can't add more");
-		        }
+	        	virtual const char * what () const throw ();
         };
         class TooFewElemenstException : public std::exception
         {
 	        public:
-	        	virtual const char * what () const throw () 
-                {
-	        		return ("Too few elements. Finding span not possible");
-		        }
+	        	virtual const char * what () const throw ();
         };
-    
+
 };

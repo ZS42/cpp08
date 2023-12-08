@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: zsyyida <zsyyida@student.42abudhabi.ae>    +#+  +:+       +#+         #
+#    By: zsyyida <zsyyida@student42abudhabi.ae>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/03 00:35:28 by zsyyida           #+#    #+#              #
-#    Updated: 2023/12/08 01:45:34 by zsyyida          ###   ########.fr        #
+#    Updated: 2023/12/08 13:04:36 by zsyyida          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,7 @@ RM = rm -rf
 
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98 -fsanitize=address
 
-SRCS = main.cpp
+SRCS = main.cpp 
 
 OBJS := $(SRCS:.cpp=.o)
 
