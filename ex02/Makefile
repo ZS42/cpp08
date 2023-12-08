@@ -6,11 +6,11 @@
 #    By: zsyyida <zsyyida@student.42abudhabi.ae>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/03 00:35:28 by zsyyida           #+#    #+#              #
-#    Updated: 2023/12/03 00:35:31 by zsyyida          ###   ########.fr        #
+#    Updated: 2023/12/08 01:45:34 by zsyyida          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = whatever
+NAME = mutant
 
 CXX = c++
 
