@@ -6,7 +6,7 @@
 /*   By: zsyyida <zsyyida@student42abudhabi.ae>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/03 00:36:21 by zsyyida           #+#    #+#             */
-/*   Updated: 2023/12/08 15:06:07 by zsyyida          ###   ########.fr       */
+/*   Updated: 2023/12/08 16:11:20 by zsyyida          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ int main()
     std::cout << *it << std::endl;
     ++it;
     }
-	// not MutantStack<int> mut(mstack) but stack copy constructor called;
+	// not MutantStack<int> not(mstack) but stack copy constructor called;
     std::stack<int> s(mstack);
 	// for (int i = 0; i < 6; i++)
 	// {
