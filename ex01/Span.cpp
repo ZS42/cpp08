@@ -6,7 +6,7 @@
 /*   By: zsyyida <zsyyida@student42abudhabi.ae>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/03 00:36:11 by zsyyida           #+#    #+#             */
-/*   Updated: 2023/12/08 10:46:22 by zsyyida          ###   ########.fr       */
+/*   Updated: 2023/12/08 14:43:18 by zsyyida          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,7 +69,16 @@ int Span::shortestSpan()
     // difference between its corresponding element in the range [first,last)
     // and the one preceding it (except for *result, which is assigned *first).
     std::adjacent_difference(_intVector.begin(), _intVector.end( ),adj_diff.begin());
-    return (*std::min_element(adj_diff.begin(), adj_diff.end()));
+	// std::vector<int>::iterator itr;
+	// itr = adj_diff.begin();
+	// while (itr != adj_diff.end())
+	// {
+	// 	std::cout << *itr << "," ;
+	// 	itr++;
+	// }
+	// std::cout << "\n";
+	// added ++ to skip first number which is not a difference
+    return (*std::min_element(++adj_diff.begin(), adj_diff.end()));
 }
 
 int Span::longestSpan()

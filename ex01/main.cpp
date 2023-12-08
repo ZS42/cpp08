@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zsyyida <zsyyida@student.42abudhabi.ae>    +#+  +:+       +#+        */
+/*   By: zsyyida <zsyyida@student42abudhabi.ae>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/03 00:36:06 by zsyyida           #+#    #+#             */
-/*   Updated: 2023/12/08 01:33:13 by zsyyida          ###   ########.fr       */
+/*   Updated: 2023/12/08 15:25:42 by zsyyida          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int main()
     // sp.addNumber(11);
     std::cout << GREEN << sp.shortestSpan() << std::endl;
     std::cout << sp.longestSpan() << RESET << std::endl;
-    
+
     std::vector<int> A(10000);
     std::srand( time ( NULL ) );
     // std::generate assigns the value returned by successive calls to gen to the elements in the range [first,last).

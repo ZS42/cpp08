@@ -6,7 +6,7 @@
 /*   By: zsyyida <zsyyida@student42abudhabi.ae>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/03 00:36:27 by zsyyida           #+#    #+#             */
-/*   Updated: 2023/12/08 13:15:48 by zsyyida          ###   ########.fr       */
+/*   Updated: 2023/12/08 15:26:50 by zsyyida          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,8 +27,6 @@
 template<typename T, typename Container = std::deque<T> >
 class MutantStack: public std::stack<T, Container>
 {
-    // std::stack<int> _mstack;
-    // std::list<int> _mlist;
     public:
 		MutantStack();
         MutantStack(Container C);
